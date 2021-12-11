@@ -137,10 +137,52 @@
                </div>            
                <p class="formulario__input-error">.</p>        
            </div>
+
+           <!--Grupo Alergia-->
+           <div class="formulario__grupo col-12 col-md-4" id="grupo_alergia">
+               <label for="alergia" class="formulario__label">Alergia a medicamentos</label>
+               <div class="formulario__grupo-input">
+                   <div>
+                    <input type="radio" class="mx-2" name="radio-alergia" id="radio-alergia-si" value="si">Si
+
+                   </div>
+                   <div>
+                    <input type="radio" class="mx-2" name="radio-alergia" id="radio-alergia-no" value="no" checked>No
+
+                   </div>
+               </div>
+           </div>
+           <div class="formulario__grupo col-12 col-md-7" id="grupo_alergia">
+                <label for="alergia" class="formulario__label">¿Cuál?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="alergia" id="alergia" placeholder="Si marco que si escriba a que es alergico">
+                </div>
+            </div>
+
+
+            <!--Grupo emergencia-->
+            <div class="formulario__grupo col-12" id="grupo_alergia">
+                <label for="emergencia" class="formulario__label">En caso de emergencia informar a:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre_em" id="nombre-em" placeholder="nombre">
+                </div>
+            </div>
+            <div class="formulario__grupo col-12 col-md-5" id="grupo_alergia">
+                <label for="numero" class="formulario__label">Teléfono:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="num-eme" id="num-eme" placeholder="9514781206">
+                </div>
+            </div>
+            <div class="formulario__grupo col-12 col-md-5" id="grupo_alergia">
+                <label for="parentesco" class="formulario__label">Parentesco:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="parentesco-em" id="parentesco-em" placeholder="hermano">
+                </div>
+            </div>
    
    
            <!--GRUPO USUARIO-->
-           <div class="formulario__grupo col-12 col-md-6" id="grupo__usuario">
+           <div class="formulario__grupo col-12 col-md-5" id="grupo__usuario">
               
                <label for="usuario" class="formulario__label">Usuario</label>
                <div class="formulario__grupo-input">
@@ -165,7 +207,7 @@
            </div>
    
            <!--GRUPO CONTRASEÑA 2 confirmacion-->    
-           <div class="formulario__grupo col-12 col-md-5" id="grupo__password2">
+           <div class="formulario__grupo col-12 " id="grupo__password2">
    
                <label for="password2" class="formulario__label">Repetir Contraseña</label>
                <div class="formulario__grupo-input">
@@ -183,72 +225,147 @@
                 <p style="font-weight: 700;">Datos de salud</p>    
                 <h6>Para darle una mejor atencion nos es importante conocer un poco de su historial medico y asi estar preparados ante cualquier situaion.</h6>        
             </span>
+            <div class="formulario__grupo col-12 ">
+                <label for="medico1" class="formulario__label">1.¿A sufrido o sufre actualmente algún problema cardiaco? </label>
+                <input type="radio" class="p-3" name="me1" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me1" id="me-no" value="No" checked> No
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico1" id="medico1" placeholder="¿Cúal?">
+                </div>
+            </div>  
 
-        
+            <div class="formulario__grupo col-12 ">
+                <label for="medico2" class="formulario__label">2.¿A sufrido o sufre actualmente algún problema respiratorio o enfermedad pulmonar?</label>
+                <br>
+                <input type="radio" class="p-3" name="me2" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me2" id="me-no" value="No" checked> No
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico2" id="medico2" placeholder="¿Cúal?">
+                </div>
+            </div>  
 
-            <div class="">
-                <label for="lesion1" class="formulario__label">1.¿Ha tenido alguna lesion osea?</label>
-                <input type="radio" class="p-3" name="lesion1" id="lesion-osea-si" value="Si"> Si
-                <input type="radio" class="p-3" name="lesion1" id="lesion-osea-no" value="No"> No
-            </div>    
+            <div class="formulario__grupo col-12 ">
+                <label for="medico3" class="formulario__label">3.¿Ha tenido molestias, dolor o presión en el pecho al realizar ejercicio?</label>
+                <input type="radio" class="p-3" name="me3" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me3" id="me-no" value="No" checked> No
+            </div>  
 
-            <div class="">
-                <label for="descripcion" class="formulario__label">Describala brevemente</label>
-                <input type="text" name="descripcion" id="descripcion" style="width: 20em;"> 
-            </div>
+            <div class="formulario__grupo col-12 ">
+                <label for="medico4" class="formulario__label">4.¿Presenta ahogo inusual, se siente cansado con facilidad, con excesiva fatiga al realizar actividad física leve?</label>
+                <input type="radio" class="p-3" name="me4" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me4" id="me-no" value="No" checked> No
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico5" class="formulario__label">5.¿Ha tenido o tiene con el ejercicio mareo, nauseas, sincopes o desmayos?</label>
+                <input type="radio" class="p-3" name="me5" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me5" id="me-no" value="No" checked> No
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico6" class="formulario__label">6.¿Tiene alguna enfermedad neurológica?</label>
+                <input type="radio" class="p-3" name="me6" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me6" id="me-no" value="No" checked> No
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico6" id="medico6" placeholder="¿Cúal?">
+                </div>
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico7" class="formulario__label">7.¿Ha tenido o tiene problemas articulares, musculares u óseos? (desgarro, esguince, trauma, fractura )</label>
+                <input type="radio" class="p-3" name="me7" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me7" id="me-no" value="No" checked> No
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico7" id="medico2" placeholder="Describa">
+                </div>
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico8" class="formulario__label">8.¿Ha presentado algún dolor o molestia articular o muscular en las últimas dos (2) semanas?</label>
+                <input type="radio" class="p-3" name="me8" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me8" id="me-no" value="No" checked> No
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico9" class="formulario__label">9.¿Tiene algún factor de riesgo cardiovascular (colesterol alto, diabetes, obesidad, estrés, tabaquismo, sedentarismo,consumo de alcohol excesivo?</label>
+                <input type="radio" class="p-3" name="me9" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me9" id="me-no" value="No" checked> No
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico9" id="medico9" placeholder="¿Cúal?">
+                </div>
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico10" class="formulario__label">10.¿Toma algún medicamento?</label>
+                <input type="radio" class="p-3" name="me10" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me10" id="me-no" value="No" checked> No
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico11" class="formulario__label">Si la respuesta anterior fue positiva indique cual/es medicamentos</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico11" id="medico11" placeholder="medicamentos">
+                </div>
+                <label for="medico11-1" class="formulario__label">¿Cuál es la dosis medicada?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico11-1" id="medico11-1" placeholder="dosis">
+                </div>
+            </div>  
+
+            <div class="formulario__grupo col-12 ">
+                <label for="medico12" class="formulario__label">12.¿Existe algún otro problema o enfermedad no mencionada aquí que debiera confiarnos, para evitar imprevistos a lahora de realizar la actividad física?</label>
+                <input type="radio" class="p-3" name="me12" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="me12" id="me-no" value="No" checked> No
+                <label for="medico12-1" class="formulario__label">Si la respuesta anterior fue positiva indique cual</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="medico12-1" id="medico12-1" placeholder="medicamentos">
+                </div>
+            </div>  
+
+
             
-            <div class="p-2">
-                <label for="lesion2" class="formulario__label">2.¿Ha tenido alguna lesion muscular?</label>
-                <input type="radio" class="p-3" name="lesion2" id="lesion-muscular-si" value="Si"> Si
-                <input type="radio" class="p-3" name="lesion2" id="lesion-muscular-no" value="No"> No
+            
+            <span class="fs-4 text-black border-top" >
+                <p style="font-weight: 700;">HÁBITOS</p>    
+            </span>
+
+            <div class="formulario__grupo col-12 ">
+                <label for="habito1" class="formulario__label">¿Realiza habitualmente Actividad Física o Deporte que implican un aumento importante de larespiración o del ritmo cardiaco almenos durante 15 minutos continuos?</label>
+                <input type="radio" class="p-3" name="habito1" id="me-si" value="Si"> Si
+                <input type="radio" class="p-3" name="habito1" id="me-no" value="No" checked> No
             </div> 
 
-            <div class="">
-                <label for="enfermedad" class="formulario__label">3.¿Padece alguna lesion cardiovascular?</label>
-                <input type="radio" class="p-3" name="enfermedad" id="enfermedad-cadio-si" value="Si"> Si 
-                <input type="radio" class="p-3" name="enfermedad" id="enfermedad-cardio-no" value="No"> No
+            <div class="formulario__grupo col-12" id="grupo__usuario">
+                <label for="cual" class="formulario__label">¿Cuál?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="habito" id="habito" >
+                </div>
+            </div>
+
+            <div class="formulario__grupo col-12 col-md-7" id="grupo__usuario">
+                <label for="semana" class="formulario__label">¿Cuantas veces a la semana?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="semana" id="semana" >
+                </div>
+            </div>
+
+            <div class="formulario__grupo col-12 col-md-3" id="grupo__usuario">
+                <label for="tiempo" class="formulario__label">Tiempo?</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="horas" id="horas" placeholder="Hrs">
+                    
+                    <input type="text" class="formulario__input" name="minu" id="minu" placeholder="Min">
+                </div>
+            </div>
+           
+
+            <div class="formulario__grupo col-12 ">
+                <label for="programa" class="formulario__label">¿Cuándo fue la última vez que estuvo en un programa de actividad física?</label>
+               
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="programa" id="programa" ">
+                </div>
             </div> 
-
-            <div class="">
-                <label for="enfermedad2" class="formulario__label">4.¿Se asfixia con facilidad al realizar ejercicio fisico?</label>
-                <input type="radio" class="p-3" name="enfermedad2" id="enfermedad-asfixia-si" value="Si"> Si
-                <input type="radio" class="p-3" name="enfermedad2" id="enfermedad-asfixia-no" value="No"> No
-            </div>
-
-
-            <div class="">
-                <label for="enfermedad2" class="formulario__label">5.¿Es usted...?</label>
-
-                <div>
-                    <label for="asmatico" class=" px-5">Asmatico(a)</label>
-                    <input type="radio"  name="asmatico" id="enfermedad-asmatico-si" value="Si"> Si
-                    <input type="radio"  name="asmatico" id="enfermedad-asmatico-no" value="No"> No
-                </div>
-                
-                <div>
-                    <label for="epileptico" class="px-5">Epileptico(a)</label>
-                    <input type="radio" name="epileptico" id="enfermedad-epileptico-si" value="Si"> Si
-                    <input type="radio" name="epileptico" id="enfermedad-epileptico-no" value="No"> No
-                </div>
-
-                <div>
-                    <label for="diabetico" class="px-5">Diabetico(a)</label>
-                    <input type="radio" name="diabetico" id="enfermedad-diabetico-si" value="Si"> Si
-                    <input type="radio" name="diabetico" id="enfermedad-diabetico-no" value="No"> No
-                </div>
-
-                <div>
-                    <label for="fumador" class="px-5">Fumador(a)</label>
-                    <input type="radio" name="fumador" id="enfermedad-fumador-si" value="Si"> Si
-                    <input type="radio" name="fumador" id="enfermedad-fumador-no" value="No"> No
-                </div>
-            </div>
-
-            <div class="">
-                <label for="anemia" class="formulario__label">6.¿Padece de anemia?</label>
-                <input type="radio"  name="anemia" id="enfermedad-anemia-si" value="Si"> Si
-                <input type="radio"  name="anemia" id="enfermedad-anemia-no" value="No"> No
-            </div>
 
             <!--GRUPO PARA TERMINOS Y CONDICIONES-->
             <div class="formulario__grupo" id="grupo__terminos">
@@ -258,6 +375,9 @@
                 </label>
 
             </div>
+            <p class="bg-warning">
+                24 horas hábiles después de diligenciar el formulario de Inscripción, usted recibirá un correo electrónico informándole si puedepuede hacer uso inmediato de las instalaciones del gimnasio o si debe antes solicitar cita para valoración médica.
+            </p>
 
 
             <!--boton aceptar para enviar-->
